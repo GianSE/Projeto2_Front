@@ -52,7 +52,8 @@ Nome: Gian Pedro Rodrigues
 
 RA: 2503638
 
-Currículo Vitae
+
+<a href="https://gianse.github.io/CV_front-end/" target="_blank">Currículo Vitae</a>
 ---
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
