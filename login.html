@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/cabecalho.css">
     <link rel="stylesheet" href="/css/rodape.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="icon" href="images/logo_ecovida.png" type="image/png">
     <title>EcoVida</title>
 </head>
+
 <header id="cabecalho">
     <nav id="navegacao">
         <div>
@@ -19,7 +21,7 @@
         <div id="paginas">     
             <a href="ecodicas.html">EcoDicas</a>
             <a href="reaproveitamento.html">Reaproveitamento</a>
-            <a href="#rodape">Contato</a>
+            <a href="#footer">Sobre</a>
         </div>
         <div id="autenticacao">
             <a href="login.html">Login</a>
@@ -29,10 +31,25 @@
 </header>
 
 <body>
-    <h1>LOGIN</h1>
+    <body>
+    <main id="div_main">
+        <h1>Login</h1>
+        <form id="form_login" action="/login">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            <a id="botao_entrar" href="index.html">
+                Entrar
+            </a>
+        </form>
+    </main>
 </body>
+
 <footer>
-    <div id="div_rodape">
+    <div id="footer">
         <a href="#cabeçalho">
             <img id="logo_rodape" src="Images/logo_ecovida.png" alt="Logo do EcoVida">
         </a>

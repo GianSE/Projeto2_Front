@@ -1,0 +1,40 @@
+#div_main{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 60vh; 
+    flex-direction: column;
+    margin: 80px 0;
+}
+
+#form_cadastro{
+    display: flex; 
+    flex-direction: column; 
+    width: 320px; 
+    gap: 15px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9;
+}
+
+#form_cadastro input{
+    border-radius: 10px;
+    height: 40px;
+}
+
+#botao_cadastro{
+    text-align: center; 
+    padding: 10px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#botao_cadastro:hover{
+    background-color: #166218; 
+}

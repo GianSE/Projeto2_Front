@@ -10,7 +10,7 @@ footer {
 }
 
 /* Alinhamento e centralização dos elementos dentro do rodapé */
-#div_rodape {
+#footer {
     display: flex; /* Exibe os elementos lado a lado */
     justify-content: center; /* Centraliza os elementos no meio da tela */
     align-items: flex-start; /* Alinha os itens no topo */
