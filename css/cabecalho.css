@@ -1,0 +1,61 @@
+/* CABEÇALHO */
+header {
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 140px;
+    background: #F8F8FF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navegação */
+#navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+#navegacao a{
+    color: #063643;
+    font-family: 'Poppins';
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.1s;
+    font-size: 18px;
+}
+
+#navegacao a:not(:has(img)):hover {
+    background: #6BB7CB66;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    transform: scale(1.15); /*efeito sutil sem alterar o layout*/
+}
+
+#navegacao img:hover{
+    transition: 0.3s;
+    transform: scale(1.20);
+}
+
+/* LOGO */
+#logo_cabecalho {
+    width: 120px;
+    min-width: 150px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#paginas{
+    display: flex;
+    gap: 6vw;
+}
+
+#autenticacao{
+    display: flex;
+    gap: 3vw;
+}
