@@ -12,7 +12,7 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 - Seção de **Sobre** com informações
 - Layout agradável
 - Links para login e cadastro
-- Favicon e logo feita com IA
+- Logo feita com IA
 
 ---
 
@@ -26,7 +26,6 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 
 - HTML5
 - CSS3
-- Fonte: [Poppins - Google Fonts](https://fonts.google.com/specimen/Poppins)
 
 
 ## 📁 Estrutura de pastas
@@ -34,8 +33,10 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 ```bash
 EcoVida/
 ├── css/
-│   ├── reset.css
 │   ├── cabecalho.css
+│   ├── cadastro.css
+│   ├── login.css
+│   ├── reset.css
 │   └── rodape.css
 ├── images/
 │   └── logo_ecovida.png
@@ -55,5 +56,3 @@ RA: 2503638
 
 <a href="https://gianse.github.io/CV_front-end/" target="_blank">Currículo Vitae</a>
 ---
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
