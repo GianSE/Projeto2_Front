@@ -1,0 +1,53 @@
+#div_main{
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center; 
+   padding: 2rem; 
+   text-align: center; 
+   background: white;
+   margin-bottom: 100px;
+}
+
+#secao_bemvindo{
+    max-width: 800px;
+}
+
+#titulo_bemvindo{
+    font-size: 2.5rem; 
+    color: #063643; 
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 1rem;
+}
+
+#info_bemvindo{
+    font-size: 1.2rem; 
+    color: #333; 
+    margin-bottom: 2rem; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#botao_comecar{
+    background-color: #6BB7CB; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: 0.3s;
+    display: inline-block; /* Garante que o link se comporte como um botão */
+}
+
+#botao_comecar:hover{
+    background-color: #2f8296;
+    transform: scale(1.10);
+}
+
+#imagem_natureza{
+    margin-top: 2rem; 
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

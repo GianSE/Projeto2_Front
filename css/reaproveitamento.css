@@ -1,0 +1,95 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f5f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+#div_main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+     margin-bottom: 100px;
+}
+
+/* Seção de destaque (hero) */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d9f2e6;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    flex: 1 1 500px;
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    max-width: 32%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Botão principal */
+.botao-destaque {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-destaque:hover {
+    background-color: #1b5e20;
+}
+
+/* Lista de dicas */
+.dicas-reaproveitamento {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.dicas-reaproveitamento h2 {
+    font-size: 2rem;
+    color: #388e3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dicas-reaproveitamento ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dicas-reaproveitamento li {
+    margin-bottom: 16px;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-left: 5px solid #66bb6a;
+    border-radius: 6px;
+}

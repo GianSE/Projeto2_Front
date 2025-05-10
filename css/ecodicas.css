@@ -1,0 +1,47 @@
+/* Estilo geral do body */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4faf4;
+    color: #2e2e2e;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Área principal da página */
+#conteudo-ecodicas {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Lista de dicas */
+.lista-dicas {
+    max-width: 800px;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Cada item de dica */
+.dica {
+    background-color: #e6f3ec;
+    border-left: 6px solid #4caf50;
+    padding: 18px 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito hover */
+.dica:hover {
+    background-color: #d9f0e3;
+}
+
+/* Título da dica */
+.dica strong {
+    color: #2e7d32;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
