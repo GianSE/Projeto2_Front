@@ -22,7 +22,7 @@
     height: 40px;
 }
 
-input::placeholder {
+input {
     padding-left: 15px;
 }
 

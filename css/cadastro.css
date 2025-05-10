@@ -23,11 +23,7 @@
     height: 40px;
 }
 
-input::placeholder {
-    padding-left: 15px;
-}
-
-input[type="date"] {
+input {
     padding-left: 15px;
 }
 
