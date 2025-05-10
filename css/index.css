@@ -47,7 +47,51 @@
 #imagem_natureza{
     margin-top: 2rem; 
     max-width: 40%; 
-    height: auto; 
+    height: 350px; 
     border-radius: 12px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#secao_ods {
+    padding: 2rem;
+    background-color: #f4f7f6;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0 8rem 0;
+    text-align: center;
+}
+
+.ods-content h2 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ods-content p {
+    margin: auto;
+    font-size: 1.1rem;
+    color: #555;
+    width: 60vw;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ods-image {
+    max-width: 35%;
+    min-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 2rem;
+    /* max-width: 300px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+.ods-image:hover{
+    transform: scale(1.05);
 }

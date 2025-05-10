@@ -23,6 +23,14 @@
     height: 40px;
 }
 
+input::placeholder {
+    padding-left: 15px;
+}
+
+input[type="date"] {
+    padding-left: 15px;
+}
+
 #botao_cadastro{
     text-align: center; 
     padding: 10px; 
@@ -37,4 +45,9 @@
 
 #botao_cadastro:hover{
     background-color: #166218; 
+}
+
+/* Barra de navegação */
+#selecionado{
+    background: #6BB7CB66;
 }

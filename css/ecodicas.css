@@ -7,23 +7,61 @@ body {
     line-height: 1.6;
 }
 
-/* Área principal da página */
-#conteudo-ecodicas {
-    padding: 40px 20px;
+/* Container principal */
+#div_main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+/* Seção de destaque (hero) */
+.hero-section {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d9f2e6;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.hero-content {
+    flex: 1 1 500px;
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    max-width: 32%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Lista de dicas */
 .lista-dicas {
-    max-width: 800px;
-    width: 100%;
-    padding: 0;
+    /* max-width: 800px; */
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
     list-style-type: none;
 }
 
 /* Cada item de dica */
-.dica {
+.lista-dicas li {
     background-color: #e6f3ec;
     border-left: 6px solid #4caf50;
     padding: 18px 24px;
@@ -31,17 +69,60 @@ body {
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
     transition: background-color 0.2s ease;
+    width: 100%;
 }
 
 /* Efeito hover */
-.dica:hover {
+.lista-dicas li:hover {
     background-color: #d9f0e3;
 }
 
 /* Título da dica */
-.dica strong {
+.lista-dicas strong {
     color: #2e7d32;
     display: block;
     margin-bottom: 8px;
     font-size: 1.1rem;
+}
+
+/* Botão principal */
+.botao-destaque {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-destaque:hover {
+    background-color: #1b5e20;
+}
+
+#botao_comecar{
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    width: 178px;
+    background-color: #6BB7CB; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: 0.3s;
+    display: block; /* Garante que o link se comporte como um botão */
+}
+
+#botao_comecar:hover{
+    background-color: #2f8296;
+    transform: scale(1.10);
+}
+
+/* Barra de navegação */
+#selecionado{
+    background: #6BB7CB66;
 }
