@@ -9,14 +9,14 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 - Página inicial com navegação amigável
 - Sessão de **EcoDicas** com sugestões sustentáveis
 - Página sobre **Reaproveitamento** de materiais
-- Seção de **Sobre** com informações
+- Seção de **Sobre** com informações e Currículo Vitae
 - Layout agradável
-- Links para login e cadastro
+- Links para login e cadastro entre outras
 - Logo feita com IA
 
 ---
 
-## 🖼️ Layout
+## 🖼️ Logo EcoVida
 
 <img src="images/logo_ecovida.png" alt="Logo EcoVida" width="150"/>
 
@@ -35,23 +35,30 @@ EcoVida/
 ├── css/
 │   ├── cabecalho.css
 │   ├── cadastro.css
+│   ├── ecodicas.css
+│   ├── index.css
 │   ├── login.css
+│   ├── reaproveitamento.css
 │   ├── reset.css
 │   └── rodape.css
 ├── images/
-│   └── logo_ecovida.png
-├── index.html
-├── ecodicas.html
-├── reaproveitamento.html
-├── login.html
+│   ├── lampada_ecologica.jpg
+│   ├── logo_ecovida.png
+│   ├── natureza_arvores.jpg
+│   ├── ods12.png
+│   └── reduce_use_cycle.png
 ├── cadastro.html
+├── ecodicas.html
+├── index.html
+├── login.html
+├── reaproveitamento.html
 └── README.md
 ```
 
 ---
-Nome: Gian Pedro Rodrigues
+<strong> Nome: Gian Pedro Rodrigues </strong>
 
-RA: 2503638
+<strong> RA: 2503638 </strong>
 
 
 <a href="https://gianse.github.io/CV_front-end/" target="_blank">Currículo Vitae</a>
