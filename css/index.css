@@ -14,9 +14,11 @@
 }
 
 #titulo_bemvindo{
-    font-size: 2.5rem; 
+    font-size: 2.8rem; 
     color: #063643; 
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Playball", cursive;
+    font-weight: 1000;
+    font-style: normal;
     margin-bottom: 1rem;
 }
 

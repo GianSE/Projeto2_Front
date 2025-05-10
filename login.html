@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/cabecalho.css">
     <link rel="stylesheet" href="/css/rodape.css">
     <link rel="stylesheet" href="/css/login.css">
+    <!-- ícones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="icon" href="images/logo_ecovida.png" type="image/png">
     <title>EcoVida</title>
 </head>
@@ -35,10 +38,16 @@
     <main id="div_main">
         <h1>Login</h1>
         <form id="form_login" action="/login">
-            <label for="email">E-mail:</label>
+            <label for="email">
+                <i class="material-icons">email</i>
+                E-mail:
+            </label>
             <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
-            <label for="senha">Senha:</label>
+            <label for="senha">
+                <i class="material-icons">key</i>
+                Senha:
+            </label>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
 
             <a id="botao_entrar" href="index.html">
