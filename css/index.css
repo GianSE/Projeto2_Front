@@ -111,3 +111,21 @@
 .ods-image:hover{
     transform: scale(1.05);
 }
+
+#githubprojeto{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 100px auto;
+}
+
+#githubprojeto img{
+    width: 100px;
+    transition: 0.3s;
+}
+
+#githubprojeto img:hover{
+    transform: scale(1.10);
+}
