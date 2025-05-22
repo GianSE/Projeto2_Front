@@ -13,6 +13,7 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 - Layout agradável
 - Links para login e cadastro entre outras
 - Logo feita com IA
+- imagens baixadas livres de direitos autorais em: <a href='https://www.pexels.com/pt-br/' target='_blank'>Pexels</a>
 
 ---
 

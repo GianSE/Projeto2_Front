@@ -46,12 +46,26 @@
     transform: scale(1.10);
 }
 
-#imagem_natureza{
-    margin-top: 2rem; 
-    max-width: 40%; 
-    height: 350px; 
-    border-radius: 12px; 
+#imagem_natureza {
+    margin-top: 2rem;
+    /* max-width: 40%; */
+    width: 400px;
+    height: 350px;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-image: url('../images/broto.jpg');
+    transition: 0.2s;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#imagem_natureza:hover {
+    background-image: url('../images/natureza_arvores.jpg');
+}
+
+#imagem_natureza:active {
+    background-image: url('../images/desmatamento.jpg');
 }
 
 #secao_ods {
