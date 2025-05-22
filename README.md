@@ -1,4 +1,4 @@
-# 🌱 EcoVida
+# 🌱 EcoVida - Concientização Sustentável
 
 O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, reaproveitamento de materiais e consumo consciente. Desenvolvido como parte de um projeto acadêmico, seu objetivo é conscientizar as pessoas sobre a importância da preservação ambiental e apresentar dicas práticas para um dia a dia mais ecológico.
 
