@@ -43,8 +43,11 @@ EcoVida/
 │   ├── reset.css
 │   └── rodape.css
 ├── images/
+│   ├── broto.jpg
+│   ├── desmatamento.jpg
 │   ├── lampada_ecologica.jpg
 │   ├── logo_ecovida.png
+│   ├── logo_github.jpg
 │   ├── natureza_arvores.jpg
 │   ├── ods12.png
 │   └── reduce_use_cycle.png
