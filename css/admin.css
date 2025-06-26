@@ -1,0 +1,131 @@
+#div_main{
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center; 
+   padding: 2rem; 
+   text-align: center; 
+   background: white;
+   margin-bottom: 100px;
+}
+
+#secao_bemvindo{
+    max-width: 800px;
+}
+
+#titulo_bemvindo{
+    font-size: 2.8rem; 
+    color: #063643; 
+    font-family: "Playball", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+#info_bemvindo{
+    font-size: 1.2rem; 
+    color: #333; 
+    margin-bottom: 2rem; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#botao_comecar{
+    background-color: #6BB7CB; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: 0.3s;
+    display: inline-block; /* Garante que o link se comporte como um botão */
+}
+
+#botao_comecar:hover{
+    background-color: #2f8296;
+    transform: scale(1.10);
+}
+
+#imagem_natureza {
+    margin-top: 2rem;
+    /* max-width: 40%; */
+    width: 400px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-image: url('../images/broto.jpg');
+    /* transition: 0.2s; */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#imagem_natureza:hover {
+    background-image: url('../images/natureza_arvores.jpg');
+}
+
+#imagem_natureza:active {
+    background-image: url('../images/desmatamento.jpg');
+}
+
+#secao_ods {
+    padding: 2rem;
+    background-color: #f4f7f6;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0 8rem 0;
+    text-align: center;
+}
+
+.ods-content h2 {
+    font-size: 2rem;
+    color: #4caf50;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ods-content p {
+    margin: auto;
+    font-size: 1.1rem;
+    color: #555;
+    width: 60vw;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ods-image {
+    max-width: 35%;
+    min-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 2rem;
+    /* max-width: 300px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+.ods-image:hover{
+    transform: scale(1.05);
+}
+
+#githubprojeto{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 100px auto;
+}
+
+#githubprojeto img{
+    width: 100px;
+    transition: 0.3s;
+}
+
+#githubprojeto img:hover{
+    transform: scale(1.10);
+}

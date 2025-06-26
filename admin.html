@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/rodape.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/admin.css">
     
     <!-- font externa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,55 +42,38 @@
 
 <body>
     <main id="div_main">
-        <section id="secao_bemvindo">
-            <h1 id="titulo_bemvindo">
-                <i class="material-icons">eco</i>
-                Bem-vindo ao EcoVida
-                <i class="material-icons">compost</i>
-            </h1>
-            <p id="info_bemvindo">
-                Junte-se a nós na missão por um planeta mais limpo e consciente. Aqui você encontra dicas, orientações e práticas sustentáveis para aplicar no seu dia a dia.
-            </p>
+        <section id="secao_admin">
+            <h1>Administração de Usuários</h1>
+            <div id="formulario_cadastro">
+                <form id="form_usuario">
+                    <div class="campo_form">
+                        <label for="nome">Nome do Usuário:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="campo_form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="botoes_form">
+                        <button type="submit" id="btn_cadastrar">Cadastrar</button>
+                        <button type="button" id="btn_limpar">Limpar Campos</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="pesquisa_usuarios">
+                <input type="text" id="input_pesquisa" placeholder="Pesquisar por nome ou e-mail...">
+                <button type="button" id="btn_pesquisar">Pesquisar</button>
+                <button type="button" id="btn_excluir_todos">Excluir Todos</button>
+            </div>
             
-            <a id="botao_comecar" href="ecodicas.html">  
-                Comece Agora
-            </a>
+            <div id="lista_usuarios_container">
+                <h2>Usuários Cadastrados</h2>
+                <ul id="lista_usuarios">
+                    </ul>
+            </div>
         </section>
-        <div id="imagem_natureza"></div>
-        <!-- <img id="imagem_natureza" src="images/natureza_arvores.jpg" alt="Natureza"> -->
     </main>
-
-    <section id="secao_ods">
-
-        <div class="ods-content">
-            
-            <h2>
-                <i class="material-icons">recycling</i>
-                ODS 12 - Consumo e Produção Responsáveis
-            </h2>
-            <p>
-                A <strong>ODS 12</strong> tem como objetivo garantir padrões de consumo e produção sustentáveis, promovendo o uso eficiente de recursos naturais e a redução do desperdício. O consumo responsável e a produção sustentável são fundamentais para preservar o meio ambiente e garantir que as gerações futuras também possam usufruir dos recursos do planeta.
-            </p>
-            <p>
-                Com a missão de contribuir para um mundo mais limpo e consciente, o <strong>EcoVida</strong> almeja aplicar práticas sustentáveis no dia a dia de seus usuários. O projeto oferece dicas ecológicas, sugestões de reaproveitamento e maneiras criativas de reduzir o impacto ambiental. Estamos comprometidos em apoiar os indivíduos a fazerem escolhas mais responsáveis e conscientes, alinhando-se diretamente com a ODS 12.
-            </p>
-            <p>
-                Ao promover a reutilização de materiais, a economia de energia e o uso racional dos recursos naturais, o EcoVida incentiva a transformação do comportamento de consumo para ajudar na preservação do planeta.
-            </p>
-            <a href="https://www.ipea.gov.br/ods/ods12.html" target="_blank">
-                <img src="images/ods12.png" alt="ODS 12" class="ods-image">
-            </a>
-        </div>
-
-    </section>
-
-    <div id="githubprojeto">
-        <a href="https://github.com/GianSE/Projeto1_Front">
-            <img src="images/logo_github.png" alt="logo github">
-        </a>
-        <h3>Github do Projeto</h3>
-    </div>
-
 </body>
 
 <footer>
@@ -126,5 +109,5 @@
         <p id="texto_direitos">© 2025 EcoVida – Todos os direitos reservados</p>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/admin.js"></script>
 </html>
