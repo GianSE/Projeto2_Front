@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Seleciona os blocos de navegação
-    const paginasComuns = document.getElementById('paginas');
+    const paginasPosLogin = document.getElementById('paginas-pos-login');
     const autenticacao = document.getElementById('autenticacao');
     const adminLink = document.getElementById('admin-link');
     
@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const userRole = localStorage.getItem('userRole'); // 'admin' ou 'user'
 
         // Oculta todos os links por padrão e só mostra o necessário
-        if (paginasComuns) {
-            paginasComuns.style.display = 'none';
+        if (paginasPosLogin) {
+            paginasPosLogin.style.display = 'none';
         }
 
         if (autenticacao) {
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Remove os links de Login e Cadastro
                 autenticacao.innerHTML = '';
             }
-            // Exibe os links comuns (EcoDicas, Reaproveitamento, Sobre)
-            if (paginasComuns) {
-                paginasComuns.style.display = 'flex';
+            // Exibe os links comuns (EcoDicas, Reaproveitamento)
+            if (paginasPosLogin) {
+                paginasPosLogin.style.display = 'flex';
             }
             
             // Cria e adiciona o link de Logout
@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
         } else {
             // Se o usuário NÃO está logado, mostra Login/Cadastro e esconde o resto
-            if (paginasComuns) {
-                paginasComuns.style.display = 'none';
+            if (paginasPosLogin) {
+                paginasPosLogin.style.display = 'none';
             }
             if (autenticacao) {
                 autenticacao.style.display = 'flex';

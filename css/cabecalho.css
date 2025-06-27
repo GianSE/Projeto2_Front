@@ -59,3 +59,26 @@ header {
     display: flex;
     gap: 3vw;
 }
+
+#navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+#links-navegacao {
+    display: flex;
+    gap: 6vw; /* Você pode ajustar este valor conforme o desejado */
+    align-items: center;
+}
+
+#paginas-pos-login {
+    display: flex;
+    gap: 6vw;
+}
+
+#paginas-sempre-visiveis {
+    display: flex;
+    gap: 6vw;
+}
