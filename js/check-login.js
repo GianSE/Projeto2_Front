@@ -14,9 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (paginasComuns) {
             paginasComuns.style.display = 'none';
         }
+
         if (autenticacao) {
             autenticacao.style.display = 'flex';
         }
+
         if (adminLink) {
             adminLink.style.display = 'none'; // Oculta o link de admin por padrão
         }
