@@ -25,8 +25,8 @@
         </div>
         <div id="autenticacao">
             <a href="login.html">Login</a>
-            <a id="selecionado" href="cadastro.html">Cadastro</a>
-        </div>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="admin.html" id="admin-link">Admin</a> </div>
     </nav>
 </header>
 
@@ -35,7 +35,7 @@
     <main id="div_main">
 
         <h1>Cadastro</h1>
-        <form id="form_cadastro" action="/cadastro">
+        <form id="form_cadastro"> 
             <label for="nome">Nome completo:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
@@ -51,9 +51,9 @@
             <label for="dataNascimento">Data de nascimento:</label>
             <input type="date" id="dataNascimento" name="dataNascimento" required>
 
-            <a id="botao_cadastro" href="login.html">
+            <button id="botao_cadastro" type="submit">
                 Cadastrar
-            </a>
+            </button>
         </form>
 
     </main>
@@ -92,4 +92,7 @@
     <div id="rodape_final">    
         <p id="texto_direitos">© 2025 EcoVida – Todos os direitos reservados</p>
     </div>
+
+    <script src="js/cadastro.js"></script>
+    <script src="js/check-login.js"></script>
 </html>

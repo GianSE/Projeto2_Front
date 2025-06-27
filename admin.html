@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="css/rodape.css">
     <link rel="stylesheet" href="css/admin.css">
     
-    <!-- font externa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
 
-    <!-- ícones -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="icon" href="images/logo_ecovida.png" type="image/png">
     <title>EcoVida</title>
 </head>
 
+<body>
+    <script>
+        // Verifica se o usuário está logado e se o papel é 'admin'
+        const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+        const userRole = localStorage.getItem('userRole');
+
+        if (!isLoggedIn || userRole !== 'admin') {
+            // Se não estiver logado ou não for admin, redireciona para o login
+            alert('Acesso negado. Você precisa ser um administrador para acessar esta página.');
+            window.location.href = 'login.html';
+        }
+    </script>
+    
 <header id="cabecalho">
     <nav id="navegacao">
         <div>
@@ -35,12 +46,10 @@
         <div id="autenticacao">
             <a href="login.html">Login</a>
             <a href="cadastro.html">Cadastro</a>
-            <a href="admin.html">Admin</a>
-        </div>
+            <a href="admin.html" id="admin-link">Admin</a> </div>
     </nav>
 </header>
 
-<body>
     <main id="div_main">
         <section id="secao_admin">
             <h1>Administração de Usuários</h1>

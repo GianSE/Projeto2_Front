@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/rodape.css">
     <link rel="stylesheet" href="css/login.css">
-    <!-- ícones -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="icon" href="images/logo_ecovida.png" type="image/png">
@@ -27,17 +26,16 @@
             <a href="#footer">Sobre</a>
         </div>
         <div id="autenticacao">
-            <a id="selecionado" href="login.html">Login</a>
+            <a href="login.html">Login</a>
             <a href="cadastro.html">Cadastro</a>
-        </div>
+            <a href="admin.html" id="admin-link">Admin</a> </div>
     </nav>
 </header>
-
 <body>
     <body>
     <main id="div_main">
         <h1>Login</h1>
-        <form id="form_login" action="/login">
+        <form id="form_login">
             <label for="email">
                 <i class="material-icons">email</i>
                 E-mail:
@@ -50,9 +48,9 @@
             </label>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
 
-            <a id="botao_entrar" href="index.html">
+            <button id="botao_entrar" type="submit">
                 Entrar
-            </a>
+            </button>
         </form>
     </main>
 </body>
@@ -89,4 +87,7 @@
     <div id="rodape_final">    
         <p id="texto_direitos">© 2025 EcoVida – Todos os direitos reservados</p>
     </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/check-login.js"></script>
 </html>

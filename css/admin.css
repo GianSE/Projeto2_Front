@@ -1,131 +1,201 @@
 #div_main{
-   display: flex; 
-   flex-direction: column; 
-   align-items: center; 
-   justify-content: center; 
-   padding: 2rem; 
-   text-align: center; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 4rem; /* Increased padding */
+   text-align: center;
    background: white;
    margin-bottom: 100px;
+   margin-top: 50px; /* Added margin-top for more space from header */
 }
 
-#secao_bemvindo{
-    max-width: 800px;
+#secao_admin{
+    max-width: 900px; /* Added max-width to limit section width */
+    width: 90%;
+    background-color: #f9f9f9;
+    padding: 3rem; /* Increased padding */
+    border-radius: 20px; /* More rounded borders */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased gap between sections */
 }
 
-#titulo_bemvindo{
-    font-size: 2.8rem; 
-    color: #063643; 
-    font-family: "Playball", cursive;
-    font-weight: 1000;
-    font-style: normal;
+#secao_admin h1 {
+    font-size: 2.5rem;
+    color: #063643;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 1rem;
 }
 
-#info_bemvindo{
-    font-size: 1.2rem; 
-    color: #333; 
-    margin-bottom: 2rem; 
-    font-family: 'Poppins', sans-serif;
+/* Form and input styling */
+#formulario_cadastro {
+    background-color: #ffffff;
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* More rounded borders */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Increased gap for spacing between form fields */
 }
 
-#botao_comecar{
-    background-color: #6BB7CB; 
-    color: white; 
-    padding: 12px 24px; 
-    font-size: 1.1rem; 
-    font-weight: bold; 
-    border-radius: 8px; 
-    text-decoration: none; 
-    transition: 0.3s;
-    display: inline-block; /* Garante que o link se comporte como um botão */
+#form_usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#botao_comecar:hover{
-    background-color: #2f8296;
-    transform: scale(1.10);
+.campo_form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
 }
 
-#imagem_natureza {
-    margin-top: 2rem;
-    /* max-width: 40%; */
-    width: 400px;
-    height: 350px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    background-image: url('../images/broto.jpg');
-    /* transition: 0.2s; */
-    background-size: cover;
-    background-position: center;
+.campo_form label {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.campo_form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* More rounded input borders */
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.campo_form input:focus {
+    outline: none;
+    border-color: #6BB7CB;
+    box-shadow: 0 0 5px rgba(107, 183, 203, 0.5);
+}
+
+/* Buttons styling */
+.botoes_form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+#btn_cadastrar, #btn_limpar, #btn_pesquisar, #btn_excluir_todos, .btn_excluir {
     cursor: pointer;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Pill-like shape */
+    transition: 0.3s ease;
+    text-transform: uppercase;
 }
 
-#imagem_natureza:hover {
-    background-image: url('../images/natureza_arvores.jpg');
+#btn_cadastrar, #btn_pesquisar {
+    background-color: #4CAF50;
+    color: white;
 }
 
-#imagem_natureza:active {
-    background-image: url('../images/desmatamento.jpg');
+#btn_cadastrar:hover, #btn_pesquisar:hover {
+    background-color: #2e7d32;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#secao_ods {
-    padding: 2rem;
-    background-color: #f4f7f6;
-    color: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0 8rem 0;
+#btn_limpar {
+    background-color: #ff9800;
+    color: white;
+}
+
+#btn_limpar:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn_excluir_todos {
+    background-color: #f44336;
+    color: white;
+}
+
+#btn_excluir_todos:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Search section styling */
+#pesquisa_usuarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#input_pesquisa {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded borders */
+    font-size: 1rem;
+}
+
+/* User list styling */
+#lista_usuarios_container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px; /* More rounded borders */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 100%;
+    text-align: left;
+}
+
+#lista_usuarios_container h2 {
+    font-size: 1.8rem;
+    color: #063643;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.ods-content h2 {
-    font-size: 2rem;
-    color: #4caf50;
-    margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+#lista_usuarios {
+    list-style: none;
+    padding: 0;
 }
 
-.ods-content p {
-    margin: auto;
-    font-size: 1.1rem;
-    color: #555;
-    width: 60vw;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
-}
-
-.ods-image {
-    max-width: 35%;
-    min-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 2rem;
-    /* max-width: 300px; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.3s;
-}
-
-.ods-image:hover{
-    transform: scale(1.05);
-}
-
-#githubprojeto{
-    width: 200px;
+#lista_usuarios li {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto 100px auto;
+    background-color: #eef7f8;
+    padding: 15px 20px;
+    margin-bottom: 12px; /* Increased margin-bottom */
+    border-radius: 10px; /* Rounded borders */
+    border-left: 5px solid #6BB7CB; /* Visual accent */
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.2s;
 }
 
-#githubprojeto img{
-    width: 100px;
-    transition: 0.3s;
+#lista_usuarios li:hover {
+    transform: translateX(5px);
+    background-color: #e0f1f4;
 }
 
-#githubprojeto img:hover{
-    transform: scale(1.10);
+.btn_excluir {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px; /* Rounded borders */
+    font-size: 0.9rem;
+}
+
+.btn_excluir:hover {
+    background-color: #d32f2f;
 }
