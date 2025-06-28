@@ -16,42 +16,56 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
     }
 
-    // NOVA FUNÇÃO: Inicializa o Local Storage com usuários pré-cadastrados se a chave 'usuarios' não existir
+    // NOVA FUNÇÃO: Inicializa o Local Storage com usuários pré-cadastrados se eles não existirem
     function inicializarUsuarios() {
         const usuariosExistentes = carregarUsuarios();
-        // Verifica se a lista de usuários está vazia
-        if (usuariosExistentes.length === 0) {
-            const usuariosIniciais = [
-                {
-                    nome: 'Ana Silva',
-                    email: 'anasilva@hotmail.com',
-                    senha: '123',
-                    dataNascimento: '1998-05-15',
-                    dataEnvio: new Date().toLocaleString()
-                },
-                {
-                    nome: 'Bruno Costa',
-                    email: 'bruno@hotmail.com',
-                    senha: '456',
-                    dataNascimento: '2000-02-22',
-                    dataEnvio: new Date().toLocaleString()
-                },
-                {
-                    nome: 'Carlos Pereira',
-                    email: 'carlos@gmail.com',
-                    senha: 'carlos',
-                    dataNascimento: '2005-05-07', // Opcional, já que é cadastrado pelo admin
-                    dataEnvio: new Date().toLocaleString()
-                },
-                {
-                    nome: 'Diana Santos',
-                    email: 'diana@gmail.com',
-                    senha: 'diana',
-                    dataNascimento: '1995-07-21', // Opcional, já que é cadastrado pelo admin
-                    dataEnvio: new Date().toLocaleString()
-                }
-            ];
-            salvarUsuarios(usuariosIniciais);
+        
+        const usuariosIniciais = [
+            {
+                nome: 'Ana Silva',
+                email: 'anasilva@hotmail.com',
+                senha: '123',
+                dataNascimento: '1998-05-15',
+                dataEnvio: new Date().toLocaleString()
+            },
+            {
+                nome: 'Bruno Costa',
+                email: 'bruno@hotmail.com',
+                senha: '456',
+                dataNascimento: '2000-11-22',
+                dataEnvio: new Date().toLocaleString()
+            },
+            {
+                nome: 'Carlos Pereira',
+                email: 'carlos@gmail.com',
+                senha: 'carlos',
+                dataNascimento: '', // Opcional, já que é cadastrado pelo admin
+                dataEnvio: new Date().toLocaleString()
+            },
+            {
+                nome: 'Diana Santos',
+                email: 'diana@gmail.com',
+                senha: 'diana',
+                dataNascimento: '', // Opcional, já que é cadastrado pelo admin
+                dataEnvio: new Date().toLocaleString()
+            }
+        ];
+
+        let usuariosAdicionados = false;
+        
+        usuariosIniciais.forEach(novoUsuario => {
+            // Verifica se o e-mail já existe na lista de usuários existentes
+            const emailJaExiste = usuariosExistentes.some(usuario => usuario.email === novoUsuario.email);
+            
+            if (!emailJaExiste) {
+                usuariosExistentes.push(novoUsuario);
+                usuariosAdicionados = true;
+            }
+        });
+
+        // Salva a lista de usuários somente se novos usuários foram adicionados
+        if (usuariosAdicionados) {
+            salvarUsuarios(usuariosExistentes);
         }
     }
 
