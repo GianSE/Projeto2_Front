@@ -11,6 +11,53 @@ document.addEventListener('DOMContentLoaded', () => {
         return usuariosJSON ? JSON.parse(usuariosJSON) : [];
     }
 
+    // Função para salvar usuários no Local Storage
+    function salvarUsuarios(usuarios) {
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    }
+
+    // NOVA FUNÇÃO: Inicializa o Local Storage com usuários pré-cadastrados se a chave 'usuarios' não existir
+    function inicializarUsuarios() {
+        const usuariosExistentes = carregarUsuarios();
+        // Verifica se a lista de usuários está vazia
+        if (usuariosExistentes.length === 0) {
+            const usuariosIniciais = [
+                {
+                    nome: 'Ana Silva',
+                    email: 'anasilva@hotmail.com',
+                    senha: '123',
+                    dataNascimento: '1998-05-15',
+                    dataEnvio: new Date().toLocaleString()
+                },
+                {
+                    nome: 'Bruno Costa',
+                    email: 'bruno@hotmail.com',
+                    senha: '456',
+                    dataNascimento: '2000-02-22',
+                    dataEnvio: new Date().toLocaleString()
+                },
+                {
+                    nome: 'Carlos Pereira',
+                    email: 'carlos@gmail.com',
+                    senha: 'carlos',
+                    dataNascimento: '2005-05-07', // Opcional, já que é cadastrado pelo admin
+                    dataEnvio: new Date().toLocaleString()
+                },
+                {
+                    nome: 'Diana Santos',
+                    email: 'diana@gmail.com',
+                    senha: 'diana',
+                    dataNascimento: '1995-07-21', // Opcional, já que é cadastrado pelo admin
+                    dataEnvio: new Date().toLocaleString()
+                }
+            ];
+            salvarUsuarios(usuariosIniciais);
+        }
+    }
+
+    // Chama a função para inicializar os usuários ao carregar a página
+    inicializarUsuarios();
+
     // Adiciona o evento de submissão do formulário
     formLogin.addEventListener('submit', (e) => {
         // Previne o comportamento padrão do formulário (recarregar a página)
@@ -19,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = emailInput.value;
         const senha = senhaInput.value;
 
-        // VERIFICAÇÃO DE ADMIN: Se as credenciais forem 'admin' e 'admin'
+        // VERIFICAÇÃO DE ADMIN: Se as credenciais forem 'admin@admin' e 'admin'
         if (email === 'admin@admin' && senha === 'admin') {
             localStorage.setItem('isLoggedIn', 'true'); // Marca o usuário como logado
             localStorage.setItem('userRole', 'admin'); // Define o papel como admin

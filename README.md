@@ -28,9 +28,7 @@ Uma vez logado, o administrador pode:
 * **Excluir Usuários**: Remover usuários individualmente da lista.
 * **Excluir Todos os Usuários**: Limpar toda a base de dados de usuários.
 
-### 📝 Exemplos de Cadastro
-
-#### Exemplos de Cadastro Comum:
+### 📝 Usuarios já cadastrados
 
 * **Usuário: Ana Silva**
     * Nome completo: `Ana Silva`
@@ -45,8 +43,6 @@ Uma vez logado, o administrador pode:
     * Senha: `456`
     * Confirmar senha: `456`
     * Data de nascimento: `22/11/2000`
-
-#### Exemplos de Cadastro pelo Painel Admin:
 
 * **Usuário: Carlos Pereira**
     * Nome do Usuário: `Carlos Pereira`
