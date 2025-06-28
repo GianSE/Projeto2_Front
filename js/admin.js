@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listaUsuarios = document.getElementById('lista_usuarios');
     const nomeInput = document.getElementById('nome');
     const emailInput = document.getElementById('email');
+    const senhaInput = document.getElementById('senha'); // Seleciona o novo input de senha
 
     // Carrega os usuários do Local Storage quando a página é carregada
     function carregarUsuarios() {
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return usuariosJSON ? JSON.parse(usuariosJSON) : [];
     }
 
-    //CRITERIO 1
+    //CRITERIO 1 (2,0)
     /* (2,0) Função adequada para incluir dados do formulário em uma lista e no Local Storage. Os
     dados deverão ser armazenados em uma única chave, com valores em um objeto JSON. */
 
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         usuarios.forEach((usuario, index) => {
             const li = document.createElement('li');
             li.innerHTML = `
-                <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}</span>
+                <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}, Senha: ${usuario.senha}</span>
                 <button class="btn_excluir" data-index="${index}">Excluir</button>
             `;
             listaUsuarios.appendChild(li);
@@ -45,14 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const nome = nomeInput.value;
         const email = emailInput.value;
-        
+        const senha = senhaInput.value; // Captura a senha
+
         // Pega a data e hora atual
         const dataEnvio = new Date().toLocaleString();
 
-        // Cria o objeto de usuário
+        // Cria o objeto de usuário com a senha
         const novoUsuario = {
             nome: nome,
             email: email,
+            senha: senha,
             dataEnvio: dataEnvio
         };
 
@@ -67,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Limpa os campos do formulário após o cadastro
         nomeInput.value = '';
         emailInput.value = '';
+        senhaInput.value = ''; // Limpa o campo de senha
     });
 
     
@@ -76,9 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
     btnLimpar.addEventListener('click', () => {
         nomeInput.value = '';
         emailInput.value = '';
+        senhaInput.value = ''; // Limpa o campo de senha
     });
 
-    //CRITERIO 2
+    //CRITERIO 2 (0,5)
     /* (2,0) Função adequada para excluir um item da lista e do Local Storage. */
 
     // Adiciona o evento de clique no container da lista
@@ -97,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    //CRITERIO 3 (2,0)
+     //CRITERIO 3 (2,0)
     /* (1,0) Função adequada para excluir todos os itens da lista e do Local Storage. */
 
     // Seleciona o botão de excluir todos
@@ -142,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultados.forEach((usuario, index) => {
                     const li = document.createElement('li');
                     li.innerHTML = `
-                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}</span>
+                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}, Senha: ${usuario.senha}</span>
                         <button class="btn_excluir" data-index="${index}">Excluir</button>
                     `;
                     listaUsuarios.appendChild(li);
@@ -172,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultados.forEach((usuario, index) => {
                     const li = document.createElement('li');
                     li.innerHTML = `
-                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}</span>
+                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}, Senha: ${usuario.senha}</span>
                         <button class="btn_excluir" data-index="${index}">Excluir</button>
                     `;
                     listaUsuarios.appendChild(li);

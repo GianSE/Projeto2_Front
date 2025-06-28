@@ -46,26 +46,32 @@
     transform: scale(1.10);
 }
 
-#imagem_natureza {
-    margin-top: 2rem;
-    /* max-width: 40%; */
+/* Adicione este estilo para o contêiner do carrossel */
+#carrossel_imagens {
+    position: relative; /* Essencial para posicionar as imagens */
     width: 400px;
     height: 350px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    background-image: url('../images/broto.jpg');
-    /* transition: 0.2s; */
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
+    margin-top: 2rem;
+    overflow: hidden; /* Garante que as imagens não ultrapassem o contêiner */
 }
 
-#imagem_natureza:hover {
-    background-image: url('../images/natureza_arvores.jpg');
+/* Estilo para todas as imagens do carrossel */
+.imagem-carrossel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    opacity: 0; /* Torna a imagem invisível por padrão */
+    transition: opacity 1.5s ease-in-out; /* Adiciona uma transição suave */
 }
 
-#imagem_natureza:active {
-    background-image: url('../images/desmatamento.jpg');
+/* Estilo para a imagem ativa (visível) */
+.imagem-carrossel.ativo {
+    opacity: 1;
 }
 
 #secao_ods {
