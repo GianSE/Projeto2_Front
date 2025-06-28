@@ -115,7 +115,7 @@ EcoVida/
 ├── login.html
 ├── reaproveitamento.html
 └── README.md
-
+```
 ---
 <strong> Nome: Gian Pedro Rodrigues </strong>
 
