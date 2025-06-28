@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return usuariosJSON ? JSON.parse(usuariosJSON) : [];
     }
 
-    //CRITERIO 1 (2,0)
+    //CRITERIO 1
     /* (2,0) Função adequada para incluir dados do formulário em uma lista e no Local Storage. Os
     dados deverão ser armazenados em uma única chave, com valores em um objeto JSON. */
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         emailInput.value = '';
     });
 
-    //CRITERIO 2 (0,5)
+    //CRITERIO 2
     /* (2,0) Função adequada para excluir um item da lista e do Local Storage. */
 
     // Adiciona o evento de clique no container da lista
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-     //CRITERIO 3 (2,0)
+    //CRITERIO 3 (2,0)
     /* (1,0) Função adequada para excluir todos os itens da lista e do Local Storage. */
 
     // Seleciona o botão de excluir todos

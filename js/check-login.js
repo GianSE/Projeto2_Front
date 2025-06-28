@@ -1,88 +1,67 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona os blocos de navegação
-    const paginasPosLogin = document.getElementById('paginas-pos-login');
+    // Seleciona os blocos de navegação e os links com a classe 'link-pos-login'
+    const paginas = document.getElementById('paginas');
     const autenticacao = document.getElementById('autenticacao');
-    const adminLink = document.getElementById('admin-link');
+    const linksPosLogin = document.querySelectorAll('.link-pos-login');
     
     // Função para verificar o status de login e o papel do usuário
     function checkLoginStatus() {
-        // Pega a flag de login e o papel do usuário do localStorage
         const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-        const userRole = localStorage.getItem('userRole'); // 'admin' ou 'user'
-
-        // Oculta todos os links por padrão e só mostra o necessário
-        if (paginasPosLogin) {
-            paginasPosLogin.style.display = 'none';
-        }
-
-        if (autenticacao) {
-            autenticacao.style.display = 'flex';
-        }
-
-        if (adminLink) {
-            adminLink.style.display = 'none'; // Oculta o link de admin por padrão
-        }
+        const userRole = localStorage.getItem('userRole');
 
         if (isLoggedIn) {
-            // Se o usuário está logado, esconde Login/Cadastro
+            // Se o usuário está logado, mostra os links de página e esconde os de autenticação
+            if (paginas) {
+                linksPosLogin.forEach(link => {
+                    link.style.display = 'block'; // Mostra os links
+                });
+            }
             if (autenticacao) {
-                // Remove os links de Login e Cadastro
-                autenticacao.innerHTML = '';
+                autenticacao.innerHTML = ''; // Limpa os links de login/cadastro
             }
-            // Exibe os links comuns (EcoDicas, Reaproveitamento)
-            if (paginasPosLogin) {
-                paginasPosLogin.style.display = 'flex';
-            }
-            
+
             // Cria e adiciona o link de Logout
             const logoutLink = document.createElement('a');
             logoutLink.href = '#';
             logoutLink.id = 'logout-link';
             logoutLink.textContent = 'Logout';
             autenticacao.appendChild(logoutLink);
-            
+
             // Adiciona o evento de clique para o Logout
             logoutLink.addEventListener('click', (e) => {
                 e.preventDefault();
-                localStorage.setItem('isLoggedIn', 'false'); // Define a flag como false
-                localStorage.removeItem('userRole'); // Remove o papel do usuário
+                localStorage.setItem('isLoggedIn', 'false');
+                localStorage.removeItem('userRole');
                 alert('Você foi desconectado.');
-                window.location.href = 'login.html'; // Redireciona para o login
+                window.location.href = 'login.html';
             });
 
             // Lógica para mostrar o link de Admin APENAS para o administrador
-            if (userRole === 'admin' && adminLink) {
-                adminLink.style.display = 'block'; // Mostra o link de admin
-                // Adiciona o link de Admin de volta à navegação
-                autenticacao.prepend(adminLink.cloneNode(true)); // Adiciona o link de volta, clonando para evitar mover o elemento
-                autenticacao.querySelector('#admin-link').style.display = 'block'; // Garante que o clone também seja exibido
+            if (userRole === 'admin') {
+                const adminLink = document.createElement('a');
+                adminLink.href = 'admin.html';
+                adminLink.id = 'admin-link';
+                adminLink.textContent = 'Admin';
+                autenticacao.prepend(adminLink);
             }
             
         } else {
-            // Se o usuário NÃO está logado, mostra Login/Cadastro e esconde o resto
-            if (paginasPosLogin) {
-                paginasPosLogin.style.display = 'none';
+            // Se o usuário NÃO está logado, esconde os links de página e mostra os de autenticação
+            if (paginas) {
+                 linksPosLogin.forEach(link => {
+                    link.style.display = 'none'; // Esconde os links
+                });
             }
             if (autenticacao) {
-                autenticacao.style.display = 'flex';
                 autenticacao.innerHTML = `<a href="login.html">Login</a>
-                                          <a href="cadastro.html">Cadastro</a>
-                                          <a href="admin.html" id="admin-link">Admin</a>`;
-                // Esconde o link de admin por padrão para não logados
-                document.getElementById('admin-link').style.display = 'none';
+                                          <a href="cadastro.html">Cadastro</a>`;
             }
-        }
-        
-        // Ajusta o gap entre os elementos da navegação
-        const navegacao = document.getElementById('navegacao');
-        if (navegacao) {
-            navegacao.style.gap = isLoggedIn ? '15vw' : '6vw';
         }
     }
 
     // Chama a função ao carregar a página
     checkLoginStatus();
 
-    // Adiciona o evento para reagir a mudanças no localStorage (ex: login em outra aba)
+    // Adiciona o evento para reagir a mudanças no localStorage
     window.addEventListener('storage', checkLoginStatus);
 });

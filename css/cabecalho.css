@@ -42,6 +42,7 @@ header {
     transform: scale(1.20);
 }
 
+
 /* LOGO */
 #logo_cabecalho {
     width: 120px;
@@ -53,6 +54,7 @@ header {
 #paginas{
     display: flex;
     gap: 6vw;
+    align-items: center;
 }
 
 #autenticacao{
