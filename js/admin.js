@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         usuarios.forEach((usuario, index) => {
             const li = document.createElement('li');
             li.innerHTML = `
-                <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}, Senha: ${usuario.senha}</span>
+                <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}</span>
                 <button class="btn_excluir" data-index="${index}">Excluir</button>
             `;
             listaUsuarios.appendChild(li);
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultados.forEach((usuario, index) => {
                     const li = document.createElement('li');
                     li.innerHTML = `
-                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}, Senha: ${usuario.senha}</span>
+                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}</span>
                         <button class="btn_excluir" data-index="${index}">Excluir</button>
                     `;
                     listaUsuarios.appendChild(li);
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resultados.forEach((usuario, index) => {
                     const li = document.createElement('li');
                     li.innerHTML = `
-                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}, Senha: ${usuario.senha}</span>
+                        <span>${usuario.dataEnvio} - Nome: ${usuario.nome}, E-mail: ${usuario.email}</span>
                         <button class="btn_excluir" data-index="${index}">Excluir</button>
                     `;
                     listaUsuarios.appendChild(li);
