@@ -1,5 +1,5 @@
-Link Repositório: https://github.com/GianSE/Projeto1_Front
+Link Repositório: https://github.com/GianSE/Projeto2_Front
 
-Link Gitpages: https://gianse.github.io/Projeto1_Front
+Link Gitpages: https://gianse.github.io/Projeto2_Front/
 
 Link Video: https://youtu.be/oQ_Et3USZU4

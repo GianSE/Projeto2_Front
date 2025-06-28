@@ -53,7 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
             if (autenticacao) {
-                autenticacao.innerHTML = `<a href="login.html">Login</a>
+                autenticacao.innerHTML = `<a href="admin.html">Admin</a>
+                                          <a href="login.html">Login</a>
                                           <a href="cadastro.html">Cadastro</a>`;
             }
         }
