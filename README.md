@@ -23,7 +23,6 @@ A página de administração (`admin.html`) permite o gerenciamento de usuários
 * **Senha**: `admin`
 
 Uma vez logado, o administrador pode:
-
 * **Cadastrar Novos Usuários**: Inserir nome, e-mail e uma senha para novos usuários, que poderão usar essas credenciais para acessar o site.
 * **Pesquisar Usuários**: Filtrar a lista de usuários por nome ou e-mail.
 * **Excluir Usuários**: Remover usuários individualmente da lista.
@@ -31,35 +30,33 @@ Uma vez logado, o administrador pode:
 
 ### 📝 Exemplos de Cadastro
 
-#### Cadastro Comum:
+#### Exemplos de Cadastro Comum:
 
 * **Usuário: Ana Silva**
+    * Nome completo: `Ana Silva`
+    * E-mail: `ana.silva@hotmail.com`
+    * Senha: `123`
+    * Confirmar senha: `123`
+    * Data de nascimento: `15/05/1998`
 
-    * Nome completo: Ana Silva
-    * E-mail: ana.silva@hotmail.com
-    * Senha: 123
-    * Confirmar senha: 123
-    * Data de nascimento: 15/05/1998
 * **Usuário: Bruno Costa**
+    * Nome completo: `Bruno Costa`
+    * E-mail: `bruno@hotmail.com`
+    * Senha: `456`
+    * Confirmar senha: `456`
+    * Data de nascimento: `22/11/2000`
 
-    * Nome completo: Bruno Costa
-    * E-mail: bruno@hotmail.com
-    * Senha: 456
-    * Confirmar senha: 456
-    * Data de nascimento: 22/11/2000
-
-#### Cadastro Admin:
+#### Exemplos de Cadastro pelo Painel Admin:
 
 * **Usuário: Carlos Pereira**
+    * Nome do Usuário: `Carlos Pereira`
+    * E-mail: `carlos@gmail.com`
+    * Senha: `carlos`
 
-    * Nome do Usuário: Carlos Pereira
-    * E-mail: carlos@gmail.com
-    * Senha: carlos
 * **Usuário: Diana Santos**
-
-    * Nome do Usuário: Diana Santos
-    * E-mail: diana@gmail.com
-    * Senha: diana
+    * Nome do Usuário: `Diana Santos`
+    * E-mail: `diana@gmail.com`
+    * Senha: `diana`
 
 ### 🚀 Alterações e Melhorias
 
@@ -74,16 +71,16 @@ Esta versão do projeto inclui melhorias significativas na experiência do usuá
 
 ## 🖼️ Logo EcoVida
 
-![Logo EcoVida](images/logo_ecovida.png)
+<img src="images/logo_ecovida.png" alt="Logo EcoVida" width="150"/>
 
 ---
 
 ## 🚀 Tecnologias utilizadas
 
-* HTML5
-* CSS3
-* JavaScript
-* Local Storage (para armazenamento de dados)
+- HTML5
+- CSS3
+- JavaScript
+- Local Storage (para armazenamento de dados)
 
 ## 📁 Estrutura de pastas
 
@@ -120,3 +117,12 @@ EcoVida/
 ├── login.html
 ├── reaproveitamento.html
 └── README.md
+
+---
+<strong> Nome: Gian Pedro Rodrigues </strong>
+
+<strong> RA: 2503638 </strong>
+
+
+<a href="https://gianse.github.io/CV_front-end/" target="_blank">Currículo Vitae</a>
+---
