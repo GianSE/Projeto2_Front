@@ -1,4 +1,4 @@
-# 🌱 EcoVida - Concientização Sustentável
+# 🌱 EcoVida - Conscientização Sustentável
 
 O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, reaproveitamento de materiais e consumo consciente. Desenvolvido como parte de um projeto acadêmico, seu objetivo é conscientizar as pessoas sobre a importância da preservação ambiental e apresentar dicas práticas para um dia a dia mais ecológico.
 
@@ -13,7 +13,29 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 - Layout agradável
 - Links para login e cadastro entre outras
 - Logo feita com IA
-- imagens baixadas livres de direitos autorais em: <a href='https://www.pexels.com/pt-br/' target='_blank'>Pexels</a>
+- Imagens baixadas livres de direitos autorais
+
+### ⚙️ Funcionalidades de Administração (Nova!)
+
+A página de administração (`admin.html`) permite o gerenciamento de usuários. Para acessá-la, utilize as seguintes credenciais de administrador:
+
+* **E-mail**: `admin@admin`
+* **Senha**: `admin`
+
+Uma vez logado, o administrador pode:
+* **Cadastrar Novos Usuários**: Inserir nome, e-mail e uma senha para novos usuários, que poderão usar essas credenciais para acessar o site.
+* **Pesquisar Usuários**: Filtrar a lista de usuários por nome ou e-mail.
+* **Excluir Usuários**: Remover usuários individualmente da lista.
+* **Excluir Todos os Usuários**: Limpar toda a base de dados de usuários.
+
+### 🚀 Alterações e Melhorias
+
+Esta versão do projeto inclui melhorias significativas na experiência do usuário e na administração:
+
+* **Redirecionamento Inteligente**: O botão "Comece Agora" na página inicial agora redireciona para a página de cadastro (`cadastro.html`) para novos usuários e para a página de EcoDicas (`ecodicas.html`) para usuários já logados.
+* **Carrossel Automático de Imagens**: As imagens na página inicial (`index.html`) agora se alternam automaticamente em um carrossel, proporcionando uma experiência visual mais dinâmica.
+* **Gerenciamento de Usuários com Senha**: A página de administração foi aprimorada para que o administrador possa cadastrar novos usuários, definindo uma senha para cada um. As informações são armazenadas no `localStorage` do navegador.
+* **Melhoria na Navegação**: A visibilidade dos links do cabeçalho (`EcoDicas` e `Reaproveitamento`) agora é controlada de forma mais eficiente, garantindo que o link "Sobre" permaneça sempre visível.
 
 ---
 
@@ -27,7 +49,8 @@ O **EcoVida** é um site informativo e educativo sobre práticas sustentáveis, 
 
 - HTML5
 - CSS3
-
+- JavaScript
+- Local Storage (para armazenamento de dados)
 
 ## 📁 Estrutura de pastas
 
@@ -51,13 +74,19 @@ EcoVida/
 │   ├── natureza_arvores.jpg
 │   ├── ods12.png
 │   └── reduce_use_cycle.png
+├── js/
+│   ├── admin.js
+│   ├── cadastro.js
+│   ├── check-login.js
+│   ├── index.js
+│   └── login.js
+├── admin.html
 ├── cadastro.html
 ├── ecodicas.html
 ├── index.html
 ├── login.html
 ├── reaproveitamento.html
 └── README.md
-```
 
 ---
 <strong> Nome: Gian Pedro Rodrigues </strong>
