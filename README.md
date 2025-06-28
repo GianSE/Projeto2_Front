@@ -42,17 +42,19 @@ Uma vez logado, o administrador pode:
     * E-mail: `bruno@hotmail.com`
     * Senha: `456`
     * Confirmar senha: `456`
-    * Data de nascimento: `22/11/2000`
+    * Data de nascimento: `22/02/2000`
 
 * **Usuário: Carlos Pereira**
     * Nome do Usuário: `Carlos Pereira`
     * E-mail: `carlos@gmail.com`
     * Senha: `carlos`
+    * Data de nascimento: `07/05/2005`
 
 * **Usuário: Diana Santos**
     * Nome do Usuário: `Diana Santos`
     * E-mail: `diana@gmail.com`
     * Senha: `diana`
+    * Data de nascimento: `21/07/1995`
 
 ### 🚀 Alterações e Melhorias
 
