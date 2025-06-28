@@ -34,7 +34,7 @@ Uma vez logado, o administrador pode:
 
 * **Usuário: Ana Silva**
     * Nome completo: `Ana Silva`
-    * E-mail: `ana.silva@hotmail.com`
+    * E-mail: `anasilva@hotmail.com`
     * Senha: `123`
     * Confirmar senha: `123`
     * Data de nascimento: `15/05/1998`
