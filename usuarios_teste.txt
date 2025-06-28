@@ -1,0 +1,32 @@
+Cadastro Comum:
+
+    Usuário: Ana Silva
+
+        Nome completo: Ana Silva
+        E-mail: ana.silva@hotmail.com
+        Senha: 123
+        Confirmar senha: 123
+        Data de nascimento: 15/05/1998
+
+    Usuário: Bruno Costa
+
+        Nome completo: Bruno Costa
+        E-mail: bruno@hotmail.com
+        Senha: 456
+        Confirmar senha: 456
+        Data de nascimento: 22/11/2000
+---
+
+Cadastro Admin:
+
+    Usuário: Carlos Pereira
+    
+        Nome do Usuário: Carlos Pereira
+        E-mail: carlos@gmail.com
+        Senha: carlos
+
+    Usuário: Diana Santos
+
+        Nome do Usuário: Diana Santos
+        E-mail: diana@gmail.com
+        Senha: diana
